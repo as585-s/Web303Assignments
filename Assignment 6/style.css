@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Styles for Accordian*/
+
+div#main {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #d3d3d3;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #778899;
+}
+
+header h2 {
+    padding: 0.8em;
+}
+
+.accordion {
+    width: 90%;
+    margin: 2em auto;
+    list-style-type: none;
+    width: 100%;
+}
+
+ul.accordion li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   }
+
+.accordion-control {
+    width: 100%;
+    background-color: #87cefa;
+    min-height: 3.5em;
+    line-height: 1.25em;
+    margin-top: 0.1em;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.accordion-control::after {
+    content: "\25BC";
+    font-size: 1.5em;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+.accordion-control.active::after {
+    transform: rotate(180deg);
+}
+
+.accordion-control:hover {
+    color: #778899;
+}
+
+.accordion-panel {
+    list-style-type: none;
+    padding: 1em;
+    line-height: 1.5em;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #fff;
+    border-radius: 0.5em;
+    display: none;
+}
+
+.accordion-control.active + .accordion-panel {
+    display: block;
+}
+
+/*Styles for Tab Panels*/
+
+.tab-list {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      list-style-type:none;
+      padding: 0px;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 10;
+}
+
+.tab-list li{
+    width: 25%;
+    flex-direction: row;
+    border-radius: 0.5em;
+    border-bottom: 2px solid #d3d3d3;
+    margin-top: 0.7em;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+ 
+    
+    text-align: center;
+    background-color: #87cefa;
+}
+
+.tab-list li a{
+    padding: 0.8em;
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.tab-list li.active a {
+    color: #fff;
+    border-bottom: 1px solid darkseagreen;
+    height: 5.4em;
+}
+
+.tab-panel {
+    display: none;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    margin: 0.06em;
+    padding: 1em;
+    position: relative;
+    border: 1p solid #000;
+    border-radius: 0.2em;
+    background: #fff;
+}
+
+.tab-panel active {
+    display: block;
+}
+
+div#accord3 p, div#tab3 p {
+    background-image: url(smokeyMountain.png);
+    height: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: none;
+}
+footer {
+    height: 3em;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 1.2em;
+    background-color: #778899;
+}
+
+/*
+li.active {
+    width: 25%;
+    flex-direction: row;
+    border-radius: 0.5em;
+    border-bottom: 2px solid #d3d3d3;
+    margin-top: 0.7em;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    padding: 1.1em;
+    text-align: center;
+    background-color: #87cefa;
+}
+
+a.tab-control {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #000;
+}
+
+a.tab-control:hover {
+    color: #778899;
+}
+
+*/

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+    Web303 Javascript Assignment 6
+    Akhtar Saeed
+    2021-11-07
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Accordion and Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer> </script>
+</head>
+<body>
+<div id="main">
+    <header>
+        <h1>My Favorite Park</h1>
+        <h2>Great Smokey Mountains</h2>
+    </header>
+    <!--Accordion links-->
+    <ul class="accordion">
+        <li class="active">
+            <a class="accordion-control" href="#accord1"><h2>Introduction</h2></a>
+        </li>
+        
+        <li class="active">
+            <a class="accordion-control" href="#accord2"><h2>Culture and Tourism</h2></a>
+        </li>
+        
+        <li class="active">
+            <a class="accordion-control" href="#accord3"><h2>Pictures</h2></a>
+        </li>
+        <li class="active">
+            <a class="accordion-control" href="#accord4"><h2>The National Park</h2></a>
+        </li>
+         
+    </ul> 
+    <!--Accordion panels-->
+    <div class="accordion-panel active" id="accord1">
+        <p>
+            The Great Smoky Mountains are a mountain range rising along
+             the Tennessee–North Carolina border in the southeastern United States. 
+             They are a subrange of the Appalachian Mountains, and form part 
+             of the Blue Ridge Physiographic Province. The range is sometimes
+              called the Smoky Mountains and the name is commonly shortened to
+               the Smokies. The Great Smokies are best known as the home of 
+               the Great Smoky Mountains National Park, which protects most 
+               of the range. The park was established in 1934, and, with over 
+               11 million visits per year, it is the most visited national park 
+               in the United States.<br>
+               <em>Source: "Great Smokey Mountains", Wikipedia, 
+               https://en.wikipedia.org/wiki/Great_Smoky_Mountains </em>
+         </p>
+    </div>
+    
+    <div class="accordion-panel" id="accord2">
+        <p>
+            The culture of the area is that of Southern Appalachia, and previously
+            the Cherokee people. Tourism is key to the area's economy, particularly 
+            in cities like Pigeon Forge and Gatlinburg in Tennessee, and 
+            Cherokee, North Carolina. In 2006, the Great Smoky Mountains Heritage Center
+            opened in Townsend, Tennessee, with the mission of preserving various aspects
+            of the region's culture.[citation needed]
+
+            The Tennessee Smokies baseball team plays in Sevierville, Tennessee and is 
+            named for the mountain range.
+            
+            The Great Smoky Mountains are also home to The Gatlinburg SkyLift and SkyBridge.<br>
+            
+            <em>Source: "Great Smokey Mountains", Wikipedia, 
+               https://en.wikipedia.org/wiki/Great_Smoky_Mountains</em>
+         </p>
+    </div>
+    <div class="accordion-panel" id="accord3">
+        <p>Source: "Great Smokey Mountains", Wikipedia, 
+            https://en.wikipedia.org/wiki/Great_Smoky_Mountains</p>
+    </div>
+    <div class="accordion-panel" id="accord4">
+        <p>
+            Wilson B. Townsend, the head of Little River Lumber, began advertising Elkmont 
+            as a tourist destination in 1909. Within a few years, the Wonderland Hotel and 
+            the Appalachian Club had been established to cater to elite Knoxvillians seeking 
+            summer mountain getaways.[85] In the early 1920s, several Appalachian Club members, 
+            among them Knoxville businessman Colonel David Chapman, began seriously considering 
+            a movement to establish a national park in the Great Smokies. As head of the 
+            Great Smoky Mountains Park Commission, Chapman was largely responsible for raising 
+            funds for land purchases and coordinating park efforts between local, state, and 
+            federal entities.
+
+            The creation of the Great Smoky Mountains National Park proved much more complex 
+            than the creation of its predecessors, such as Yellowstone and Yosemite, which were 
+            already federally owned. Along with convincing logging firms to sell lucrative lumber 
+            rights, the Park Commission had to negotiate the purchase of thousands of small farms 
+            and remove entire communities. The commission also had to deal with the Tennessee and 
+            North Carolina legislatures, which at times were opposed to spending taxpayer money on 
+            park efforts.[87] In spite of these difficulties, the Park Commission had completed most 
+            major land purchases by 1932. The national park officially opened in 1934, with 
+            President Franklin D. Roosevelt presiding over the opening ceremony at Newfound Gap. <br>
+            <em>Source: "Great Smokey Mountains", Wikipedia, 
+            https://en.wikipedia.org/wiki/Great_Smoky_Mountains</em>
+         </p>
+    </div>
+
+
+    <ul class="tab-list">
+        <li class="active">
+            <a class="tab-control" href="#tab1"> <h2>Introduction</h2> </a>
+        </li>
+        <li class="active">
+            <a class="tab-control" href="#tab2"> <h2>Culture and Tourism</h2> </a>
+        </li>
+        <li class="active">
+            <a class="tab-control" href="#tab3"> <h2>Pictures</h2> </a>
+        </li>
+        <li class="active">
+            <a class="tab-control" href="#tab4"> <h2>The National Park</h2> </a>
+        </li>
+    </ul>
+    <div class="tab-panel active" id="tab1">
+        <p> The Great Smoky Mountains are a mountain range rising along
+            the Tennessee–North Carolina border in the southeastern United States. 
+            They are a subrange of the Appalachian Mountains, and form part 
+            of the Blue Ridge Physiographic Province. The range is sometimes
+             called the Smoky Mountains and the name is commonly shortened to
+              the Smokies. The Great Smokies are best known as the home of 
+              the Great Smoky Mountains National Park, which protects most 
+              of the range. The park was established in 1934, and, with over 
+              11 million visits per year, it is the most visited national park 
+              in the United States.<br>
+              <em>Source: "Great Smokey Mountains", Wikipedia, 
+              https://en.wikipedia.org/wiki/Great_Smoky_Mountains </em></p>
+    </div>
+    <div class="tab-panel" id="tab2">
+        <p>The culture of the area is that of Southern Appalachia, and previously
+            the Cherokee people. Tourism is key to the area's economy, particularly 
+            in cities like Pigeon Forge and Gatlinburg in Tennessee, and 
+            Cherokee, North Carolina. In 2006, the Great Smoky Mountains Heritage Center
+            opened in Townsend, Tennessee, with the mission of preserving various aspects
+            of the region's culture.
+
+            The Tennessee Smokies baseball team plays in Sevierville, Tennessee and is 
+            named for the mountain range.
+            
+            The Great Smoky Mountains are also home to The Gatlinburg SkyLift and SkyBridge.<br> 
+            
+            <em>Source: "Great Smokey Mountains", Wikipedia, 
+               https://en.wikipedia.org/wiki/Great_Smoky_Mountains</em></p>
+    </div>   
+    <div class="tab-panel" id="tab3">
+        <p>Source: "Great Smokey Mountains", Wikipedia, 
+            https://en.wikipedia.org/wiki/Great_Smoky_Mountains</p>
+    </div> 
+    <div class="tab-panel" id="tab4">
+        <p>Wilson B. Townsend, the head of Little River Lumber, began advertising Elkmont 
+            as a tourist destination in 1909. Within a few years, the Wonderland Hotel and 
+            the Appalachian Club had been established to cater to elite Knoxvillians seeking 
+            summer mountain getaways.[85] In the early 1920s, several Appalachian Club members, 
+            among them Knoxville businessman Colonel David Chapman, began seriously considering 
+            a movement to establish a national park in the Great Smokies. As head of the 
+            Great Smoky Mountains Park Commission, Chapman was largely responsible for raising 
+            funds for land purchases and coordinating park efforts between local, state, and 
+            federal entities.
+
+            The creation of the Great Smoky Mountains National Park proved much more complex 
+            than the creation of its predecessors, such as Yellowstone and Yosemite, which were 
+            already federally owned. Along with convincing logging firms to sell lucrative lumber 
+            rights, the Park Commission had to negotiate the purchase of thousands of small farms 
+            and remove entire communities. The commission also had to deal with the Tennessee and 
+            North Carolina legislatures, which at times were opposed to spending taxpayer money on 
+            park efforts.[87] In spite of these difficulties, the Park Commission had completed most 
+            major land purchases by 1932. The national park officially opened in 1934, with 
+            President Franklin D. Roosevelt presiding over the opening ceremony at Newfound Gap. <br>
+            <em>Source: "Great Smokey Mountains", Wikipedia, 
+            https://en.wikipedia.org/wiki/Great_Smoky_Mountains</em></p>
+    </div>  
+    <footer>
+        <p> &#169 2021 Akhtar Saeed</p>
+    </footer>
+</div>
+    <script src="jquery.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
