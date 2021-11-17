@@ -1,0 +1,120 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #99ddff;
+	height: 6.25em;
+	text-align: center;
+	padding: 1.25em;
+	margin-bottom: 10px;
+}
+
+#picture-viewer{
+  /*  display: none; */
+	margin: 0 auto;
+	position: relative; 
+	max-width: 675px;
+	height: 450px;
+	overflow: hidden;
+	border: 0.4em solid brown;
+	padding: 1em;
+	background-color: #99cccc;
+}
+
+.photo-frame {
+	position: relative;
+	margin: 0 auto;
+	max-width: 675px;
+	max-height: 450px;
+	display: block;
+}
+
+#picture-viewer.is-loading:after {
+    content: url('img/Spinner-5.gif');
+    position: absolute;
+	z-index: 10;
+    top: 100px;
+    right: 100;
+
+}
+
+.photo-frame.is-loading:after {
+    content: "url('img/Spinner-5.gif')";
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+	left: 100px;
+	display: block;
+}
+/*
+#picture-viewer .photo-frame{
+    position: relative;
+    display: block;
+    width: 37.25em;
+    height: 23.63em;
+}
+*/
+
+#picture-viewer img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+	top: 50%;
+	left: 50%;
+}
+
+a.active{
+	opacity: 0.3;
+}
+
+
+.thumbnails {
+	display: flex;
+	justify-content: center;
+	margin: 0.63em 0;
+	padding: 5px;
+}
+/*
+#picture-viewer .thumb img{
+    width: 5em;
+    height: 2.8125em;
+	margin: 0.3125em;
+	border: 0.3125em solid brown;
+}
+*/
+.thumbnails img{
+	width: 5em;
+    height: 2.8125em;
+	margin: 0.3125em;
+	border: 0.3125em solid brown;
+}
+
+footer {
+	height: 3em;
+	background-color: #99ddff;
+}
+footer p{
+	padding: 1em;
+}
+
+@media screen and (max-width: 600px){
+	header{
+		height:8em;
+	}
+	#picture-viewer{
+  
+	max-height: 325px;
+	
+}
+
+}
