@@ -1,0 +1,12 @@
+{"characters":[
+{"name": "Harry Potter", "year": "2001-11-14", "created_by":"J.K.Rowling", "movie":"Harry Potter and the Philosopher's Stone"},
+{"name": "The Dude", "year": "1998-03-06", "created_by":"Joel Coen", "movie":"The Big Lebowski"},
+{"name": "Willy Wonka", "year": "1971-06-30", "created_by":"Roald Dahl", "movie":"Charlie and the Chocolate Factory"},
+{"name": "Walter White", "year": "2008-01-10", "created_by":"Vince Gilligan", "movie":"Breaking Bad"},
+{"name": "Frasier Crane", "year": "1984-09-27", "created_by":"Les Charles", "movie":"Cheers"},
+{"name": "Shrek", "year": "2001-05-18", "created_by":"William Steig", "movie":"Shrek"},
+{"name": "Bambi", "year": "1945-07-24", "created_by":"Felix Salten", "movie":"Bambi"},
+{"name": "Jules Winfield", "year": "1994-10-14", "created_by":"Quentin Tarantino", "movie":"Pulp Fiction"},
+{"name": "Lassie", "year": "1954-09-12", "created_by":"Eric Knight", "movie":"Lassie Come Home"},
+{"name": "Tony Montana", "year": "1983-12-01", "created_by":"Oliver Stone", "movie":"Scarface"}
+]}
