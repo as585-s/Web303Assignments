@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #99ddff;
+	height: 6.25em;
+	text-align: center;
+	padding: 1.25em;
+	margin-bottom: 10px;
+}
+
+header h3{
+	margin-top: 10px;
+}
+
+header h3 a{
+	color: black;
+}
+
+div.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+div.container h2{
+	width: 50%;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+div.formContainer {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid #f1f1f1;
+	background-color: #fffacd;
+}
+
+
+div.inputsContainer{
+	width: 75%;
+	padding: 10px 0;
+}
+
+input[type=text], input[type=password] {
+	padding: 12px 20px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+div.imageContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.imageContainer img {
+	margin: 5px 0;
+	border: 10px solid #F7DC6F;
+}
+
+div.countries {
+	margin: 10px 0;
+}
+
+select#countries{
+	padding: 5px;
+}
+
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	width: 100%;
+}
+
+button:disabled,
+button[disabeled]{
+	border: 1px solid #999999;
+	background-color: #cccccc;
+	color: #666666;
+}
+
+label {
+	width: 75%;
+	display: inline-block;
+}
+
+div#message {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 20px;
+	background-color: #ffa500;
+}
+
+
+
+footer {
+	height: 3em;
+	padding: 1em;
+	background-color: #99ddff;
+}
+
+
+@media screen and (max-width: 600px){
+	header{
+		height:8em;
+	}}

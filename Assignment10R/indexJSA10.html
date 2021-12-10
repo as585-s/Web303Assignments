@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Web303 Assignment 10
+	Name: Akhtar Saeed
+	Date: 2021-12-07
+-->
+<head>
+  <title>Web303 Assignment 10: Form Enhancement and Validation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styleJSA10.css" rel="stylesheet">
+ </head>
+<body>
+	<header>
+		<h2>Welcome to My Page</h2>
+	</header>
+	<div class="container">
+		<h2>Log in</h2>
+		<p></p>
+		<form id="login" method="post" action="/register" name="register">
+			<div class="formContainer" id="main">
+				<div class="inputsContainer">
+					<div class="username">
+					<label for="username" class="required"><strong>Username</strong></label>
+					<input type="text" placeholder="Enter a username" name="username" id="username" data-type="text">
+					</div>
+
+					<div class="password">
+					<label for="password" class="required"><strong>Password</strong></label>
+					<input type="password" placeholder="Enter a password" name="password" id="password">
+					</div>
+
+					<div class="password">
+					<label for="conf-password" class="required"><strong>Confirm Password</strong></label>
+					<input type="password" placeholder="Enter password again" name="conf-password" id="conf-password">
+					</div>
+
+					<div class="countries">
+						<select id="countrySelect" name="countrySelect">
+							<option id="options">Please select your Country</option>
+						</select>
+					</div>
+					<div>
+							<label>
+								<input type="checkbox" id="tos">
+								I accept the terms of service.
+							</label>
+						</div>
+					<div class="submit">
+						<button type="submit" id="submit">Login</button>
+					</div>
+				</div>
+			</div>
+			
+		</form>
+		<div id="message"></div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/utilities.js"></script>
+	<script type="text/javascript" src="js/scriptA10R.js"></script>
+	
+
+	<footer>
+		<p>&#169 2021 Akhtar Saeed</p>
+	</footer>
+</body>
+</html>
